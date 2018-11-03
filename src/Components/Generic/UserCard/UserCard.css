@@ -1,0 +1,89 @@
+.container {
+	height:325px;
+	width:200px;
+	box-shadow:2px 8px 20px 1px #e2e2e2;
+	background-color:white;
+	padding:0 8px;
+	display:inline-block;
+	margin-right: 30px;
+	position:relative;
+}
+
+.buttonsBar {
+	height:40px;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	opacity:1;
+}
+
+.buttonsBar > i {
+	color:#ffa38f;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	} to {
+		opacity: 1;
+	}
+}
+
+.buttonsBar > i:first-child:hover {
+	color: #3ec1d3;
+	cursor:pointer;
+}
+
+.buttonsBar > i:last-child:hover {
+	color: #d80057;
+	cursor:pointer;
+}
+
+.photoSection {
+	/*border-bottom:1px solid red;*/
+	width:100%;
+	vertical-align:middle;
+	text-align:center;
+}
+
+.photoSection > img {
+	margin:auto;
+	vertical-align: middle;
+	margin-top:36px;
+	height:50px;
+	width:50px;
+	border-radius:50%;
+}
+
+.title {
+	margin-top: 20px;
+}
+
+.title > p:nth-child(1) {
+	text-align: center;
+	font-weight:700;
+	margin:0;
+}
+
+.title > p:nth-child(2) {
+	text-align:center;
+	font-weight:400;
+	opacity:0.6;
+	margin:0;
+}
+
+.commonStuff {
+	margin-top:20px;
+}
+
+.commonStuff > p {
+	margin: 0;
+	color: #3ec1d3;
+}
+
+.commonStuff > span {
+	margin-bottom:10px;
+	display:block;
+	font-weight:500;
+}

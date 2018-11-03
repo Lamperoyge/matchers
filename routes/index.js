@@ -7,6 +7,7 @@ var sequelizeAddSkillToUser = require('../controller/User').sequelizeAddSkillToU
 var matching = require('../controller/Matching').matching;
 
 /* GET home page. */
+
 router.get('/users', function(req,res,next) {
   models.User.findAll({
     include: [models.Skill]
@@ -45,10 +46,6 @@ router.get('/login/:email/:password', function(req,res,next) {
   // res.status('200');
 })
 
-router.get('/*', function(req, res, next) {
-  res.render('index', { title: 'Express' });
-
-});
 
 
 
