@@ -2,11 +2,14 @@ doctype html
 html
   head
     title= title
+
+
     link(rel='stylesheet' href='/stylesheets/style.css')
+
     link(rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css")
     link( rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,600,700,800")
     link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.20/css/uikit.min.css")
     link(rel="stylesheet" href="http://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous")
   body
     block content
-    script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "http://127.0.0.1:8080/javascripts") + '/app.js')
+    script(src=(process.env.NODE_ENV === "production" ? "/javascripts" : "http://172.30.0.190:8080/javascripts") + '/app.js')
