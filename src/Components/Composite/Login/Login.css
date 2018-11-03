@@ -1,0 +1,52 @@
+.container {
+	margin:auto;
+	height:50vh;
+	width:20vw;
+	margin-top:10vh;
+	padding-left:7vw;
+}
+
+.title {
+	display:inline-block;
+	padding-top:30px;
+	margin:0;
+	position: relative;
+	left: -3px;
+	color: #d80057;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing:1px;
+}
+
+.button {
+	padding:6px 24px;
+	border:2px solid #d80057;
+	outline:none;
+	background-color:#f6f7d7;
+	color: #d80057;
+	font-size:12px;
+	font-weight:500;
+	text-decoration:none;
+	position:relative;
+	top:36px;
+}
+
+.blockButton {
+	display:block;
+	width: 70%;
+	padding:8px 24px;
+	text-align:center;
+}
+
+.button:hover {
+	animation: button-fill .5s forwards;
+}
+
+@keyframes button-fill {
+	from {
+		background-color: #f6f7d7;
+		color: #d80057;
+	} to {
+		background-color: #d80057;
+		color: #f6f7d7;
+	}
+}
